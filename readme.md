@@ -25,8 +25,11 @@ struct lets you create a list of variable  with different data type in a single 
 enum lets you create enumerate variables for limited and specific usage
 
   built-in enumns : 
-     1. options - lets you create null , None , nil type for a function or any other reference types
-     2.result
+   ### 1. options - lets you return null , None , nil type for a function or any other reference types or some type of values 
+   ### 2.result - lets you return OK and Err value , used for error handling in rust
 
 pattern matching is similar to switch-case , but here the statement provided must align with any one of the statement and the return type of all the statement must be same
 
+### Package Management 
+  we can add external libraries or in rust called as crates by command :
+    cargo add crate_name
