@@ -8,5 +8,9 @@
 
 variables are not mutable , that is the values are not changeable
    ### the error : cannot mutate immutable variable `num`
+
+while declaring variables , put _ if you want space 
+    ### the error : Variable `myString` should have snake_case name, e.g. `my_string` 
 so we "mut" when variable is declared
    
+struct lets you create a list of variable  with different data type in a single form

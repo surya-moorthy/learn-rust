@@ -1,26 +1,24 @@
 fn main(){
-   println!("Hello World");  
-   println!("{}",fibonacci(8))
+  let my_string = String::from("Hello World"); 
+  let  _l_str = "Ten".to_string();
+  println!("{}",str_count(_l_str));
+  println!("{}",str_count(my_string));
+  let user = User {
+      first_name: "surya".to_string(),
+      last_name: "moorthy".to_string(),
+      age : 32,
+  };
+  println!("{},{},{}",user.first_name,user.last_name,user.age)
 }
 
-fn fibonacci(num: i32) -> i32 {
-    let mut first = 0;
-    let mut second = 1;
-    
-    if num == 0{
-        return 1
-    }
-    if num == 2 {
-        return 2
-    }
-
-    for i in 0..(num - 1) {
-        let temp = second;
-        println!("{} is {}", i, second);
-        second = second + first;
-        first = temp;
-        
-    
-    }
-    return second;
+struct User{
+  first_name: String,
+  last_name: String,
+  age: i32,
 }
+
+
+fn str_count(str: String) -> usize {
+  return str.chars().count();
+} 
+
