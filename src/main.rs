@@ -1,12 +1,26 @@
-fn main() {
-    let ans = is_even(21);
-    println!("{}",is_even(32));
-    println!("{}",ans)
+fn main(){
+   println!("Hello World");  
+   println!("{}",fibonacci(8))
 }
 
-fn is_even(num: u32) -> bool {
-    if num % 2 == 0 {
-        return true;
+fn fibonacci(num: i32) -> i32 {
+    let mut first = 0;
+    let mut second = 1;
+    
+    if num == 0{
+        return 1
     }
-    return false;
+    if num == 2 {
+        return 2
+    }
+
+    for i in 0..(num - 1) {
+        let temp = second;
+        println!("{} is {}", i, second);
+        second = second + first;
+        first = temp;
+        
+    
+    }
+    return second;
 }

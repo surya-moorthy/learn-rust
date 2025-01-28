@@ -1,5 +1,12 @@
-Init rust project 
+## Init rust project 
 
 1. cargo init - init a end user application project , which contains binary representation of a file
 
 2. cargo init --lib -  this create a library based project , this cannot get executed directly , we need to create test case to execute the code ,since the code written are reusable code 
+
+## variables , data types
+
+variables are not mutable , that is the values are not changeable
+   ### the error : cannot mutate immutable variable `num`
+so we "mut" when variable is declared
+   
