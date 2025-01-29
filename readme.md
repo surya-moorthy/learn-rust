@@ -33,3 +33,16 @@ pattern matching is similar to switch-case , but here the statement provided mus
 ### Package Management 
   we can add external libraries or in rust called as crates by command :
     cargo add crate_name
+
+# Part -2 
+## Collections 
+    -> data structures that are used for storing multiple values , and these data collections stored in the heap , since these contains large space so we store more values , push and delete , that is dynamically allocate those memory
+  ## Vectors
+  ## Hashmap
+  ## Iterators 
+      types -> iter 
+            -> iter_mut
+            -> into_iter
+  ## Vectors
+   
+  
